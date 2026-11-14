@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: white;
     text-align: center;
     padding: 2.5rem 1rem;
 }
@@ -36,7 +36,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     margin: 0 0.8rem;
@@ -47,4 +47,77 @@ nav a {
 
 nav a:hover {
     background-color: var(--secondary-color);
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.proyecto {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+#habilidades ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#habilidades li {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Hover effect 3 */
+}
+
+#habilidades li:hover {
+    transform: translateY(-5px);
+}
+
+#contacto a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }
